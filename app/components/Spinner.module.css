@@ -1,0 +1,26 @@
+.spinner {
+    height: 2rem;
+    width: 2rem;
+    animation: spin 1s linear infinite;
+    fill: #04976b;
+    color: #141514;
+}
+
+.sronly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

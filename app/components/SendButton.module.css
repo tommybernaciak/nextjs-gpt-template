@@ -1,0 +1,68 @@
+.stopButton {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0.75rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: #cbcdcb;
+  transition: all 0.2s;
+}
+
+.stopButton:hover {
+  border-color: #04976b;
+}
+
+.stopButtonIcon {
+  color: #04976b;
+}
+
+.sendButton {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0.75rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    height: 2.5rem; 
+    width: 2.5rem; 
+    align-items: center; 
+    justify-content: center;
+    border-radius: 9999px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: #cbcdcb;
+    transition: all 0.2s;
+  }
+  
+  .sendButton:hover {
+    border-color: rgba(0, 0, 0, 0.7); 
+  }
+  
+  .sendButton.disabled {
+    cursor: not-allowed;
+  }
+  
+  .sendButton.disabled:hover {
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+
+.sendButtonIcon {
+}
+
+.sendButtonIcon.disabled {
+  color: #6B7280;
+}
+
+.sendButtonIcon:not(.disabled) {
+  color: #04976b;
+}
