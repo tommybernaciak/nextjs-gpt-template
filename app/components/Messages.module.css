@@ -9,16 +9,18 @@
     padding: 1rem;
 }
 
-.assistant-container {
+.assistantContainer {
     display: flex;
     width: 100%;
     align-items: center;
     background-color: transparent;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin-top: 0.5rem;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    border-radius: 0.75rem;
 }
 
-.assistant-content {
+.assistantContent {
     display: flex;
     width: 100%;
     align-items: flex-start;
@@ -26,18 +28,19 @@
     padding-right: 0;
 }
 
-.user-container {
+.userContainer {
     display: flex;
     justify-content: center;
     border-radius: 0.75rem;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #e4e5e8;
+    border: 1px solid #141514;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
 
-.user-content {
+.userContent {
     display: flex;
     width: 100%;
     align-items: flex-start;
@@ -47,7 +50,7 @@
 }
   
 @media (min-width: 640px) {
-    .user-content {
+    .userContent {
         padding-left: 0;
         padding-right: 0;
     }

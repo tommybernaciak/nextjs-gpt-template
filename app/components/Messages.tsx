@@ -1,5 +1,5 @@
 import { Message } from "ai";
-import { FC, useRef } from "react";
+import { FC, Fragment, useRef } from "react";
 import Spinner from "./Spinner";
 import styles from "./Messages.module.css";
 import MessageContent from "./MessageContent";
@@ -23,22 +23,22 @@ const Messages: FC<Props> = ({ messages, showSpinner }) => {
   return (
     <div ref={chatContainerRef} className={styles.container}>
       {messages.map((message, i) => (
-        <>
+        <Fragment key={i}>
           {message.role === "assistant" && (
-            <div key={i} className={styles.assistantContainer}>
+            <div className={styles.assistantContainer}>
               <div className={styles.assistantContent}>
                 <MessageContent message={message} />
               </div>
             </div>
           )}
           {message.role === "user" && (
-            <div key={i} className={styles.userContainer}>
+            <div className={styles.userContainer}>
               <div className={styles.userContent}>
                 <MessageContent message={message} />
               </div>
             </div>
           )}
-        </>
+        </Fragment>
       ))}
       {showSpinner && (
         <div className={styles.spinner}>

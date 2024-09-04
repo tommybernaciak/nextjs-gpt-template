@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^0.0.55",
     "ai": "^3.3.10",
     "axios": "^1.7.4",
+    "catched-error-message": "^0.0.1",
     "material-symbols": "^0.22.2",
+    "mongoose": "^8.6.0",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
